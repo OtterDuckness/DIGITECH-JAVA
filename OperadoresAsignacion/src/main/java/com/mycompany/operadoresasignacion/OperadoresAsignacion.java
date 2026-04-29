@@ -1,0 +1,32 @@
+
+package com.mycompany.operadoresasignacion;
+
+
+public class OperadoresAsignacion {
+
+    public static void main(String[] args) {
+        double saldo = 100.50;
+        
+        System.out.println("Tu saldo es: " + saldo);
+        saldo = saldo + 27.50;
+        System.out.println("Has recibido un abono de 27.50: " + saldo);
+        
+        System.out.println("Hay una promoción en la entidad bancaria, se duplican tus ingresos"); //duplicamos todos los ingresos????
+        
+        saldo = saldo / 2; 
+        System.out.println("Tienes una avería en casa, tu saldo se divide entre 2: " + saldo);
+        
+        saldo = saldo + 250.38 * 2;
+        System.out.println("Recibes un ingreso en tu cuenta (pero un doble por la promoción bancaria): " + saldo);
+        
+        saldo = saldo - 55.37;
+        System.out.println("Te acaban de cargar en la cuenta la compra del sábado: " + saldo);
+        
+        saldo = saldo + 1200.96 * 2;
+        System.out.println("Recibes el abono de la nómina (pero un doble por la promoción bancaria): " + saldo);
+        
+        saldo = saldo - 85.23;
+        System.out.println("Finalmente hay un cargo de la cena de ayer: " + saldo);
+        
+    }
+}

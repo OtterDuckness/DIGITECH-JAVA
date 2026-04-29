@@ -1,0 +1,31 @@
+
+package com.mycompany.calcularfactorial;
+
+import java.util.Scanner;
+
+//Declarar una variable con un dato numérico entero, se debe mostrar el 
+//factorial de la variable.
+
+public class CalcularFactorial {
+
+    public static void main(String[] args) {
+        
+        Scanner datospantalla = new Scanner(System.in);
+        
+        int numero1;
+        int factorial;
+        
+        System.out.println("Introduce un número para calcular el factorial: ");
+        numero1 = datospantalla.nextInt();
+        factorial = numero1;
+        
+        for (int i = 1; i < numero1; i++) { //un bucle para calcular el factorial
+            factorial = factorial * (numero1 - i);
+
+        }
+        System.out.println("El factorial es: " + factorial);
+ 
+        datospantalla.close();
+        
+    }
+}

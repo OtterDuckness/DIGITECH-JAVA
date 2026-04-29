@@ -1,0 +1,40 @@
+
+package com.mycompany.practicaclasesextendidas;
+
+public class Alumno {
+
+    
+    private String nombre;
+    private String apellidos;
+    
+    public Alumno(String nombre, String apellidos)
+    {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+    }
+    
+    public String getNombre()
+    {
+        return nombre;
+    }
+    public void setNombre(String newNombre)
+    {
+        this.nombre = newNombre;
+    }
+    public String getApellidos()
+    {
+        return apellidos;
+    }
+    public void setApellidos(String newApellidos)
+    {
+        this.apellidos = newApellidos;
+    }
+    
+    public void mostrarInfo()
+    {
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Apellidos: " + this.apellidos);
+    }
+}
+
+
